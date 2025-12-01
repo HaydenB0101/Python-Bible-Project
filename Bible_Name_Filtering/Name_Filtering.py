@@ -7,7 +7,6 @@ df = pd.read_csv('Person_Data/BibleData-Person.csv')
 # clean unique names
 unique_names = (
     df['person_name']
-    .dropna()
     .astype(str)
     .str.strip()
     .replace('', pd.NA)
@@ -77,7 +76,6 @@ for name in unique_names:
 # dataframe of name frequency
 df_counts = pd.DataFrame({'name': unique_names, 'count': counts})
 df_counts = df_counts.sort_values(by='count', ascending=False).reset_index(drop=True)
-df_counts['rank'] = df_counts['count'].rank(method='dense', ascending=False).astype(int)
 
-df_counts.to_csv('Person_Data/name_counts.csv', index=False)
-print("The file has been created (finally)")
+df_counts.to_csv('Data_Output/name_counts.csv', index=False)
+print("The file has been created in Data_Output (finally)")
