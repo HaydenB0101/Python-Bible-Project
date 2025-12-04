@@ -1,8 +1,16 @@
 import pandas as pd
 import re
+import os
+
+# minimum number of mentions to keep a name
+MIN_COUNT = 10
 
 # filtering unique names from the csv file
-df = pd.read_csv('Person_Data/BibleData-Person.csv')
+# read person data
+df = pd.read_csv('Bible_Name_Filtering/Person_Data/BibleData-Person.csv')
+
+# clean person_name in the dataframe so counts by person_id align with our unique_names
+df['person_name'] = df['person_name'].astype(str).str.strip()
 
 # clean unique names
 unique_names = (
@@ -13,6 +21,15 @@ unique_names = (
     .dropna()
     .unique()
     .tolist()
+)
+
+# compute how many distinct person_id values exist for each cleaned name
+# this gives the number of distinct people who had that given name
+person_counts = (
+    df.dropna(subset=['person_name'])
+      .groupby('person_name')['person_id']
+      .nunique()
+      .to_dict()
 )
 
 # Reading from kjb.txt and filtering
@@ -28,7 +45,7 @@ def keep_substring(superset, sub, where, include):
         return superset[index:] if include else superset[index + len(sub):]
 
 # Import and clean KJV
-with open('Person_Data/kjb.txt', 'r', encoding='utf-8') as f:
+with open('Bible_Name_Filtering/Person_Data/kjb.txt', 'r', encoding='utf-8') as f:
     kjb_text = f.read()
 
 filtered_text = keep_substring(
@@ -72,10 +89,21 @@ for name in unique_names:
 
     matches = re.findall(pattern, filtered_text, flags=re.IGNORECASE)
     counts.append(len(matches))
+    # (Only total match counts are kept)
 
 # dataframe of name frequency
-df_counts = pd.DataFrame({'name': unique_names, 'count': counts})
+df_counts = pd.DataFrame({
+    'name': unique_names,
+    'count': counts,
+})
 df_counts = df_counts.sort_values(by='count', ascending=False).reset_index(drop=True)
 
-df_counts.to_csv('Data_Output/name_counts.csv', index=False)
-print("The file has been created in Data_Output (finally)")
+# Map name -> number of distinct person_id values (people who had that name)
+df_counts['people_count'] = df_counts['name'].map(lambda n: person_counts.get(n, 0))
+
+# Trim names mentioned fewer than MIN_COUNT (10) times
+df_counts = df_counts[df_counts['count'] >= MIN_COUNT].reset_index(drop=True)
+
+output_path = 'Bible_Name_Filtering/Data_Output/name_counts.csv'
+df_counts.to_csv(output_path, index=False)
+print(f"Saved {len(df_counts)} names with >= {MIN_COUNT} occurrences to {output_path}")
