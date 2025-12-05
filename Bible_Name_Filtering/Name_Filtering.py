@@ -1,10 +1,11 @@
 import pandas as pd
 import re
 import os
+import matplotlib.pyplot as plt
 
 ###filtering unique names from the csv file###
-df = pd.read_csv('Person_Data/BibleData-Person.csv')
-# df = pd.read_csv('Bible_Name_Filtering/Person_Data/BibleData-Person.csv')
+# df = pd.read_csv('Person_Data/BibleData-Person.csv')
+df = pd.read_csv('Bible_Name_Filtering/Person_Data/BibleData-Person.csv')
 
 # list of all unique names from the 'person_name' column
 unique_names = df['person_name'].dropna().unique().tolist()
@@ -98,6 +99,44 @@ top10_males = pd.Series(male_counts).sort_values(ascending=False).head(10)
 print("Top 10 books with most (unique) male names:\n", top10_males)
 
 most_popular_names = {}
+
 name_counts = df.groupby("person_name")["name_instance"].count().sort_values(ascending=False)
+
+counts_df = pd.DataFrame({
+    "female_unique_names": pd.Series(female_counts),
+    "male_unique_names":pd.Series(male_counts)
+})
+name_counts.to_csv("name_counts.csv", header=["count"])
+counts_df.to_csv("book_gender_name_counts.csv")
+top10_females.to_csv("top10_books_female_names.csv", header=["unique_female_names"])
+top10_males.to_csv("top10_books_male_names.csv", header=["unique_male_names"])
+
+new_names_vs_books_df = pd.read_csv("book_gender_name_counts.csv", index_col=0)
+
+plt.figure(figsize=(12, 6))
+new_names_vs_books_df.plot(kind="bar", figsize=(14, 7))
+plt.title("Unique Male vs Female Names per Book")
+plt.ylabel("Count of Unique Names")
+plt.xticks(rotation=45, ha="right")
+plt.tight_layout()
+plt.show()
+
+plt.figure(figsize=(10, 5))
+top10_males.plot(kind="bar", color="steelblue")
+plt.title("Top 10 Most Frequent Male Names in the Bible")
+plt.xlabel("Name")
+plt.ylabel("Frequency")
+plt.xticks(rotation=45, ha="right")
+plt.tight_layout()
+plt.show()
+
+plt.figure(figsize=(10, 5))
+top10_females.plot(kind="bar", color="mediumvioletred")
+plt.title("Top 10 Most Frequent Female Names in the Bible")
+plt.xlabel("Name")
+plt.ylabel("Frequency")
+plt.xticks(rotation=45, ha="right")
+plt.tight_layout()
+plt.show()
 
 print(name_counts.head(20))
