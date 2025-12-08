@@ -4,9 +4,10 @@ import matplotlib.pyplot as plt
 
 #print(os.getcwd())
 #pd.read_csv(file_path, sep=',', header=None, names=['col1', 'col2', 'col3'])
-df_1880 = pd.read_csv('/data/groups/classes/2025/fall/ds150_002/gesst9660/Bible Project/Baby_Names_1880-2022/yob1880.txt',
+#local file path github: Baby_Name_Filtering/yob1880.txt
+df_1880 = pd.read_csv('Baby_Name_Filtering/yob1880.txt',
  sep=',', header=None, names=['Name', 'Gender', 'Count'])
-df_1881 = pd.read_csv('/data/groups/classes/2025/fall/ds150_002/gesst9660/Bible Project/Baby_Names_1880-2022/yob1881.txt',
+df_1881 = pd.read_csv('Baby_Name_Filtering/yob1881.txt',
  sep=',', header=None, names=['Name', 'Gender', 'Count'])
 print(df_1880)
 print(df_1881)
@@ -17,7 +18,7 @@ filenames = {}
 names_df['year'] = 1880
 all_years = []
 for year in range(1880, 2023): #1880-2022
-    filenames[f"/data/groups/classes/2025/fall/ds150_002/gesst9660/Bible Project/Baby_Names_1880-2022/yob{year}.txt"] = year
+    filenames[f"Baby_Name_Filtering/yob{year}.txt"] = year
 print(len(filenames))
 #print(filenames)
 #creates dictionary of the data per year
@@ -46,7 +47,7 @@ plt.show()
 
 # Create plot for specific person
 Mary_df = names_df[names_df['Name']=='Mary']
-MaryF_df = Mary_df[Mary_df['Gender']=='F']
+MaryF_df = Mary_df[Mary_df['Gender']=='F'] # Female for Mary, M for Male names like Jesus
 print(MaryF_df)
 print(MaryF_df['Count'].max())
 max_mary = MaryF_df[MaryF_df['Count']==MaryF_df['Count'].max()]
