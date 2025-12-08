@@ -10,6 +10,7 @@ df_1881 = pd.read_csv('/data/groups/classes/2025/fall/ds150_002/gesst9660/Bible 
  sep=',', header=None, names=['Name', 'Gender', 'Count'])
 print(df_1880)
 print(df_1881)
+#testing of the file path
 
 names_df = df_1880
 filenames = {}
@@ -19,6 +20,7 @@ for year in range(1880, 2023): #1880-2022
     filenames[f"/data/groups/classes/2025/fall/ds150_002/gesst9660/Bible Project/Baby_Names_1880-2022/yob{year}.txt"] = year
 print(len(filenames))
 #print(filenames)
+#creates dictionary of the data per year
 
 for file, year in filenames.items():
     names_df = pd.read_csv(file, sep=',', header=None, names=['Name', 'Gender', 'Count'])
@@ -27,7 +29,7 @@ for file, year in filenames.items():
     
 names_df = pd.concat(all_years, ignore_index=True)
 print(names_df)
-
+#DataFrame of all data over the years
 
 # Create plot for total population
 count_total = []
