@@ -65,7 +65,6 @@ Jebus_1,Jebus,,son of Canaan (GEN 10:15),male,Jebusite,,1,64
 Amor_1,Amor,,son of Canaan (GEN 10:15),male,Amorite,,1,65
 Girgash_1,Girgash,,son of Canaan (GEN 10:15),male,Girgashite,,1,66
 Hivi_1,Hivi,,son of Canaan (GEN 10:15),male,Hivites,,1,67
-Ark_1,Ark,,son of Canaan (GEN 10:15),male,Arkite,,1,68
 Sini_1,Sini,,son of Canaan (GEN 10:15),male,,,1,69
 Arvad_1,Arvad,,son of Canaan (GEN 10:15),male,,,1,70
 Zemar_1,Zemar,,son of Canaan (GEN 10:15),male,,,1,71
@@ -107,7 +106,6 @@ Lot_1,Lot,,"son of Haran (GEN 11:27), nephew of Abram (GEN 12:5)",male,,,1,106
 Sarai_1,Sarai,,Abram's wife (11:29),female,,,1,107
 Milcah_1,Milcah,,"Nahor's wife (and niece), the daughter of Haran (GEN 11:29)",female,,,1,108
 Iscah_1,Iscah,,daughter of Haran (GEN 11:29),female,,,1,109
-Pharaoh_1,Pharaoh,,who took Sarai (GEN 12:15),male,,,1,110
 Amraphel_1,Amraphel,,King of Shinar (GEN 14:1),male,,,1,111
 Arioch_1,Arioch,,King of Ellasar (GEN 14:1),male,,,1,112
 Chedorlaomer_1,Chedorlaomer,,King of Elam (GEN 14:1),male,,,1,113
@@ -277,7 +275,6 @@ Mibzar_1,Mibzar,,chief of Edom (GEN 36:42),male,Edomite,,1,276
 Magdiel_1,Magdiel,,chief of Edom (GEN 36:43),male,Edomite,,1,277
 Iram_1,Iram,,chief of Edom (GEN 36:43),male,Edomite,,1,278
 Potiphar_1,Potiphar,,Pharaoh's officer (GEN 37:36),male,,,1,279
-Pharaoh_2,Pharaoh,,Pharaoh of Joseph's lifetime (GEN 37:36),male,,,2,280
 Hirah_1,Hirah,,an Adullamite (GEN 38:1),male,,,1,281
 Shua_1,Shua,,Canaanite father of Judah's wife (GEN 38:2),male,,,1,282
 Er_1,Er,,firstborn son of Judah (GEN 38:3),male,Judah,,1,283
@@ -342,14 +339,12 @@ Guni_1,Guni,,son of Naphtali (GEN 46:24),male,Naphtali,"from the list of ""sons 
 Jezer_1,Jezer,,son of Naphtali (GEN 46:24),male,Naphtali,"from the list of ""sons of Israel"" who ""went to Egypt"" (GEN 46:8-27), the Jezerites (NUM 26:49)",1,342
 Shillem_1,Shillem,,son of Naphtali (GEN 46:24),male,Naphtali,"from the list of ""sons of Israel"" who ""went to Egypt"" (GEN 46:8-27), the Shillemites (NUM 26:49)",1,343
 Machir_1,Machir,,son of Manasseh (GEN 50:23),male,Manasseh,the Machirites (NUM 26:29),1,344
-Pharaoh_3,Pharaoh,,Pharaoh when Moses was born (EXO 1:11),male,,This Pharaoh dies before Moses returns from his exile in Midian (Exodus 2:23),3,345
 Shiphrah_1,Shiphrah,,Hebrew midwife of Exodus (EXO 1:15),female,,,1,346
 Puah_1,Puah,,Hebrew midwife of Exodus (EXO 1:15),female,,,1,347
 Moses_1,Moses,,led Israel out of Egypt in the Exodus (EXO 13:3),male,Levi,,1,348
 Reuel_2,Reuel,,"Moses' father-in-law (EXO 2:18, NUM 10:29)",male,,Reuel was a Kenite (JDG 1:16),2,349
 Zipporah_1,Zipporah,,"daughter of Reuel (EXO 2:18), Moses' wife (EXO 2:21), a Cushite (NUM 12:1)",female,,,1,350
 Gershom_1,Gershom,,Moses' first son (EXO 2:22),male,Levi,Both Gershom and Eliezer were born to Moses in Midian since he left Midian with sons (plural)- Exodus 4:20,1,351
-Pharaoh_4,Pharaoh,,Pharaoh during Israel's Exodus from Egypt (EXO 3:10),male,,,4,352
 Aaron_1,Aaron,,brother of Moses (EXO 4:14) and Levitical priest (EXO 28:1),male,Levi,,1,353
 Libni_1,Libni,,son of Gershon (EXO 6:17),male,Levi,the Libnites (NUM 26:58),1,354
 Shimei_1,Shimei,,son of Gershon (EXO 6:17),male,Levi,,1,355
@@ -796,7 +791,6 @@ Gareb_1,Gareb,,"the Ithrite, thirty-sixth of ""the thirty"" of David's men (2SA 
 Araunah_1,Araunah,,the Jebusite (2SA 24:16),male,,,1,797
 Abishag_1,Abishag,,"the Shunammite, David's nurse (1KI 1:3-4)",female,,,1,798
 Rei_1,Rei,,supported David when Adonijah attempted a coup (1KI 1:8),male,,,1,799
-Pharaoh_5,Pharaoh,,"Pharaoh, father of Solomon's wife (1KI 3:1, 9:16)",male,,Pharaoh during King David's lifetime,5,800
 Azariah_1,Azariah,,"son [descendant] of Zadok, served as priest (1KI 4:2) in the temple which Solomon built (1CH 6:10)",male,Levi,,1,801
 Elihoreph_1,Elihoreph,,secretary for King Solomon (1KI 4:3),male,,,1,802
 Ahijah_2,Ahijah,,secretary for King Solomon (1KI 4:3),male,,,2,803
@@ -990,8 +984,6 @@ Tikvah_1,Tikvah,,father of Shallum (2KI 22:14),male,,,1,991
 Harhas_1,Harhas,,father of Tikvah (2KI 22:14),male,,,1,992
 Joshua_3,Joshua,,the governor of Beersheba (?) (2KI 23:8),male,,,3,993
 Nathan-melech_1,Nathan-melech,,the official over the chamber of the horses and chariots of the sun (2KI 23:11),male,,,1,994
-Pharaoh Neco_1,Pharaoh Neco,,King of Egypt (2KI 23:29),male,,,1,995
-King of Assyria_1,King of Assyria,,King of Assyria against whom Pharaoh Neco battled (2KI 23:29),male,,Clark's Commentary indicates this was Nabopolassar,1,996
 Jehoahaz_2,Jehoahaz,,"King of Judah, son of Josiah (2KI 23:30)",male,,He did evil in the sight of the LORD (2KI 23:32),2,997
 Hamutal_1,Hamutal,,mother of Jehoahaz (2KI 23:31),female,,,1,998
 Jeremiah_1,Jeremiah,,"of Libnah, father of Hamutal (2KI 23:31)",male,,,1,999
@@ -1209,7 +1201,6 @@ Mered_1,Mered,,son of Ezrah (1CH 4:17),male,Judah,,1,1210
 Epher_2,Epher,,son of Ezrah (1CH 4:17),male,Judah,,2,1211
 Jalon_1,Jalon,,son of Ezrah (1CH 4:17),male,Judah,,1,1212
 Bithia_1,Bithia,,daughter of Pharaoh whom Mered took (1CH 4:17),female,,,1,1213
-Pharaoh_6,Pharaoh,,father of Bithia (1CH 4:17),male,,,6,1214
 Miriam_2,Miriam,,daughter of Mered and Bithia (1CH 4:17),female,Judah,,2,1215
 Shammai_3,Shammai,,son of Mered and Bithia (1CH 4:17),male,Judah,,3,1216
 Ishbah_1,Ishbah,,son of Mered and Bithia (1CH 4:17),male,Judah,,1,1217
@@ -2597,12 +2588,10 @@ Tabeel_2,Tabeel,,enemies wanted to set his son over Judah as king,male,,,2,2598
 Immanuel_1,Immanuel,,the son of Isaiah (ISA 8:2) given as a sign by G-d to Ahaz (ISA 7:14),male,,,1,2599
 Zechariah_23,Zechariah,,son of Jeberechiah who witnessed Isaiah's naming of his son (ISA 8:2),male,,,23,2600
 Jeberechiah_1,Jeberechiah,,father of Zechariah (ISA 8:2),male,,,1,2601
-Pharaoh_7,Pharaoh,,Pharaoh of Isaiah's day (ISA 19:11),male,,,7,2602
 Sargon_1,Sargon,,king of Assyria (ISA 20:1),male,,,1,2603
 Pashhur_2,Pashhur,,"son (descendant?) of Immer, chief officer in the Temple (JER 20:1)",male,,,2,2604
 Zephaniah_2,Zephaniah,,"the priest, son of Maaseiah (JER 21:1)",male,Levi,"As ""priest"", a descendant of Aaron",2,2605
 Maaseiah_14,Maaseiah,,father of Zephaniah (JER 21:1),male,,,14,2606
-Pharaoh_8,Pharaoh,,Pharaoh of Jeremiah's day (JER 25:19),male,,,8,2607
 Micah_4,Micah,,of Moresheth (JER 26:18) authored the book of Micah (MIC 1:1),male,,,4,2608
 Uriah_4,Uriah,,prophesied in the name of the LORD (JER 26:20),male,,,4,2609
 Shemaiah_20,Shemaiah,,"father of Uriah, from Kiriath-jearim (JER 26:20)",male,,,20,2610
@@ -2748,7 +2737,6 @@ Zebedee_1,Zebedee,,father of James and John (MAT 4:21),male,,fisherman (mending 
 John_2,John,,son of Zebedee (MAT 4:21),male,,"fisherman (mending their nets- MAT 4:21), one of the Twelve (MAT 10:2), author of the book of John",2,2750
 YHVH_2,YHVH,,Heavenly Father (MAT 5:16),male,,"only the Son has revealed the Father (MAT 11:27, JHN 1:18)",2,2751
 Matthew_1,Matthew,,the tax collector (MAT 9:9),male,,one of the Twelve (MAT 10:2),1,2752
-Daughter_1,Daughter,,daughter of Abraham with an issue of blood for twelve years (MAT 9:22),female,,,1,2753
 Philip_1,Philip,,disciple of the Messiah (MAT 10:3),male,,"one of the Twelve (MAT 10:2), from the city of Bethsaida (JHN 1:44) of Galilee (JHN 12:21)",1,2754
 Bartholomew_1,Bartholomew,,disciple of the Messiah (MAT 10:3),male,,one of the Twelve (MAT 10:2). Bartholomew is viewed by some as a surname (bar Tolmai) since he is called Nathanael in JHN 1:45.,1,2755
 Thomas_1,Thomas,,disciple of the Messiah (MAT 10:3),male,,one of the Twelve (MAT 10:2),1,2756
@@ -2995,7 +2983,6 @@ Diotrephes_1,Diotrephes,,loves to be first in the church but does not accept wha
 Demetrius_2,Demetrius,,has received (good) testimony from everyone (3JN 1:12),male,,,2,2997
 Antipas_1,Antipas,,G-d's witness and faithful one (REV 2:13),male,,"Antipas, martyr and leader of the believers in Pergamum",1,2998
 Jezebel_2,Jezebel,,teaches and leads people astray (REV 2:20),female,,,2,2999
-Death_1,Death,,the rider of the pale/ashen horse (REV 6:8),male,,,1,3000
 Abaddon_1,Abaddon,,"king over the locusts of Revelation 9, the angel of the abyss (REV 9:11)",male,,,1,3001
 Jucam_1,Jucam,,son of Ezer in Rahlf's Septuaginta (GEN 36:27),male,,** This name is not present in the BHS Hebrew text but is present in Rahlfs Septuaginta,1,3002
 Abdeel_2,Abdeel,,son of Dedan in Rahlf's Septuaginta (GEN 25:3),male,,** This name is not present in the BHS Hebrew text but is present in Rahlfs Septuaginta,2,3003
