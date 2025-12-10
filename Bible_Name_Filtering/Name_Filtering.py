@@ -56,15 +56,24 @@ def keep_substring(superset, sub, where, include):
             return superset[index + len(sub):]
 
 # Import kjb.txt and clean it
-        return superset[:index + len(sub)] if include else superset[:index]
-    else:
-        return superset[index:] if include else superset[index + len(sub):]
 
 # Import and clean KJV
 with open('Bible_Name_Filtering/Person_Data/kjb.txt', 'r', encoding='utf-8') as f:
     kjb_text = f.read()
 
-print(filtered_text[:500])  # Print the first 500 characters of the filtered text
+filtered_text = keep_substring(
+    kjb_text,
+    "1:1 In the beginning God created the heaven and the earth.",
+    where="after",
+    include=True
+).strip()
+
+filtered_text = keep_substring(
+    filtered_text,
+    "*** END OF THE PROJECT GUTENBERG EBOOK THE KING JAMES VERSION OF THE BIBLE ***",
+    where="before",
+    include=False
+).strip()
 
 bible_books = [
     "Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy",
@@ -164,19 +173,6 @@ plt.tight_layout()
 plt.show()
 
 print(name_counts.head(20))
-filtered_text = keep_substring(
-    kjb_text,
-    "1:1 In the beginning God created the heaven and the earth.",
-    where="after",
-    include=True
-).strip()
-
-filtered_text = keep_substring(
-    filtered_text,
-    "*** END OF THE PROJECT GUTENBERG EBOOK THE KING JAMES VERSION OF THE BIBLE ***",
-    where="before",
-    include=False
-).strip()
 
 # count name occurrences
 counts = []
